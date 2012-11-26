@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>1.1.2</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>clib</short-name>
+	<uri>http://www.github.com/ledlogic/clib/tags/1.0</uri>
+	<description>Spring Framework JSP Tag Extensions</description>
+	
+	<tag>
+		<name>render</name>
+		<tag-class>com.github.ledlogic.clib.tag.CachedScriptRenderTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>
+			Used to store script
+		</description>
+	</tag>
+	
+	<tag>
+		<name>script</name>
+		<tag-class>com.github.ledlogic.clib.tag.CachedScriptTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>
+			Used to store script
+		</description>
+		<attribute>
+			<name>async</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>	
+		<attribute>
+			<name>charset</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>defer</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>src</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>
