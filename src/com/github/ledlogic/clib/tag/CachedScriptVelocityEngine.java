@@ -22,6 +22,7 @@ public class CachedScriptVelocityEngine {
 	
 	private CachedScriptVelocityEngine() {
 		VelocityEngine ve = new VelocityEngine();
+		
 		Properties p = new Properties();
 		p.setProperty("resource.loader", "class");
 		p.setProperty("class.resource.loader.description", "Velocity Classpath Resource Loader");

@@ -18,7 +18,7 @@
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
 		<h1>Test</h1>
@@ -30,6 +30,6 @@
         <clib:script>window.jQuery || document.write('<' + 'script src="../js/vendor/jquery-1.8.2.min.js"><\/script>' + '>');</clib:script>
         <clib:script src="../js/plugins.js"></clib:script>
         <clib:script src="../js/main.js"></clib:script>
-        <clib:render />
+        <clib:script-render />
     </body>
 </html>

@@ -8,15 +8,6 @@
 	<description>Spring Framework JSP Tag Extensions</description>
 	
 	<tag>
-		<name>render</name>
-		<tag-class>com.github.ledlogic.clib.tag.CachedScriptRenderTag</tag-class>
-		<body-content>JSP</body-content>
-		<description>
-			Used to store script
-		</description>
-	</tag>
-	
-	<tag>
 		<name>script</name>
 		<tag-class>com.github.ledlogic.clib.tag.CachedScriptTag</tag-class>
 		<body-content>JSP</body-content>
@@ -48,5 +39,14 @@
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
+	</tag>
+	
+	<tag>
+		<name>script-render</name>
+		<tag-class>com.github.ledlogic.clib.tag.CachedScriptRenderTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>
+			Used to render scripts
+		</description>
 	</tag>
 </taglib>

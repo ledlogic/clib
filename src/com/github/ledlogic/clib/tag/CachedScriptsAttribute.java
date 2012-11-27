@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 
+/**
+ * Session entity for tracking an array of script blocks.
+ */
 public class CachedScriptsAttribute extends ArrayList<CachedScript> {
 	private static final long serialVersionUID = 1L;
 	
