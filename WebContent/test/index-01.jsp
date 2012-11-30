@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="clib" uri="http://www.github.com/ledlogic/clib/tags/1.0" %>
+<%@ taglib prefix="clib" uri="http://www.github.com/ledlogic/clib/tag/1.0" %>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -12,9 +12,10 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/main.css">
+        <clib:link rel="stylesheet" href="../css/normalize.css" />
+        <clib:link rel="stylesheet" href="../css/main.css" />
         <clib:script src="../js/vendor/modernizr-2.6.2.min.js"></clib:script>
+        <clib:style-render />
     </head>
     <body>
         <!--[if lt IE 7]>

@@ -1,0 +1,22 @@
+
+<style##
+#if( $async )##
+ async="${async}"##
+#end##
+#if( $charset )##
+ charset="${charset}"##
+#end##
+#if( $defer )##
+ defer="${defer}"##
+#end##
+#if( $src )##
+ src="${src}"##
+#end##
+#if( $type )##
+ type="${type}"##
+#end##
+>##
+#if( $body )##
+${body}##
+#end##
+</style>

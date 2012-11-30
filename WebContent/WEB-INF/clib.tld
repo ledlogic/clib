@@ -4,15 +4,15 @@
 	<tlib-version>1.1.2</tlib-version>
 	<jsp-version>1.2</jsp-version>
 	<short-name>clib</short-name>
-	<uri>http://www.github.com/ledlogic/clib/tags/1.0</uri>
+	<uri>http://www.github.com/ledlogic/clib/tag/1.0</uri>
 	<description>Spring Framework JSP Tag Extensions</description>
 	
 	<tag>
 		<name>script</name>
-		<tag-class>com.github.ledlogic.clib.tag.CachedScriptTag</tag-class>
+		<tag-class>com.github.ledlogic.clib.tag.script.CachedScriptTag</tag-class>
 		<body-content>JSP</body-content>
 		<description>
-			Used to store script
+			Used to store script information.
 		</description>
 		<attribute>
 			<name>async</name>
@@ -43,10 +43,82 @@
 	
 	<tag>
 		<name>script-render</name>
-		<tag-class>com.github.ledlogic.clib.tag.CachedScriptRenderTag</tag-class>
+		<tag-class>com.github.ledlogic.clib.tag.script.CachedScriptRenderTag</tag-class>
 		<body-content>JSP</body-content>
 		<description>
 			Used to render scripts
+		</description>
+	</tag>
+
+	<tag>
+		<name>link</name>
+		<tag-class>com.github.ledlogic.clib.tag.style.CachedLinkTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>
+			Used to store link information
+		</description>
+		<attribute>
+			<name>href</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>	
+		<attribute>
+			<name>lang</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>media</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>rel</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>sizes</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>style</name>
+		<tag-class>com.github.ledlogic.clib.tag.style.CachedStyleTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>
+			Used to store style information.
+		</description>
+		<attribute>
+			<name>media</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>scoped</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>style-render</name>
+		<tag-class>com.github.ledlogic.clib.tag.style.CachedStyleRenderTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>
+			Used to render styles
 		</description>
 	</tag>
 </taglib>

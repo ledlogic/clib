@@ -1,0 +1,21 @@
+
+<link##
+#if( $href )##
+ href="${href}"##
+#end##
+#if( $lang )##
+ lang="${lang}"##
+#end##
+#if( $lang )##
+ lang="${lang}"##
+#end##
+#if( $rel )##
+ rel="${rel}"##
+#end##
+#if( $sizes )##
+ sizes="${sizes}"##
+#end##
+#if( $type )##
+ type="${type}"##
+#end##
+/>

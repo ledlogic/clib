@@ -81,9 +81,9 @@
 
 	<target name="javadoc" depends="javadoc.clean, javadoc.prepare" description="Generates the JavaDoc API for this project">
 		<javadoc
-			packagenames="com.github.ledlogic.clib.tag"
+			packagenames="com.github.ledlogic.clib.tag.*"
 	        sourcepath="${src}"
-			classpath="compile.classpath"
+			classpathref="compile.classpath"
 	       	destdir="${javadoc}"
 	        author="true"
 	        version="true"
